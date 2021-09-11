@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <section>
+        <div class="calculator">
+                <div class="result">
+                    <div class="memoryBox"></div>
+                    <p class="result-text">0</p>   
+                </div>
+            <div class="flex">
+                <button class="each other zero" onclick="totalClear()">AC</button>
+                <button class="each other" onclick="clearContent()">C</button>
+                <button class="each action operator" onclick="operate(this)">÷</button>
+            </div>
+            <div class="flex">
+                <div class="each number" onclick="getInput(this)">7</div>
+                <div class="each number" onclick="getInput(this)">8</div>
+                <div class="each number" onclick="getInput(this)">9</div>
+                <button class="each action operator" onclick="operate(this)">×</button>
+            </div>
+            <div class="flex">
+                <button class="each number" onclick="getInput(this)">4</button>
+                <button class="each number" onclick="getInput(this)">5</button>
+                <button class="each number" onclick="getInput(this)">6</button>
+                <button class="each action operator" onclick="operate(this)">+</button>
+            </div>
+            <div class="flex">
+                <button class="each number" onclick="getInput(this)">1</button>
+                <button class="each number" onclick="getInput(this)">2</button>
+                <button class="each number" onclick="getInput(this)">3</button>
+                <button class="each action operator" onclick="operate(this)">-</button>
+            </div>
+            <div class="flex">
+                <button class="each zero number" onclick="getInput(this)">0</button>
+                <button class="each" onclick="getInput(this)">.</button>
+                <button class="each action" onclick="calculate(this)">=</button>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
